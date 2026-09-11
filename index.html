@@ -1,86 +1,321 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0a0a0a">
-  <title>Педан Илья — видеограф в Рязани</title>
-  <meta name="description" content="Педан Илья — видеограф в Рязани. Reels, короткие рекламные ролики, съёмка и монтаж.">
-  <style>
-    :root{--bg:#080808;--text:#f5f5f2;--muted:#a3a3a0;--line:#292929;--card:#111}
-    *{box-sizing:border-box} html{scroll-behavior:smooth}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.4}
-    a{color:inherit;text-decoration:none}.wrap{max-width:1180px;margin:auto;padding:0 28px}
-    nav{position:fixed;z-index:10;top:0;left:0;right:0;padding:20px 0;background:linear-gradient(#080808dd,transparent);backdrop-filter:blur(5px)}
-    nav .inner{display:flex;justify-content:space-between;align-items:center}
-    .logo{font-weight:800;letter-spacing:.08em;text-transform:uppercase}.navlinks{display:flex;gap:28px;font-size:14px;color:#ccc}
-    .hero{min-height:100svh;display:grid;place-items:center;position:relative;overflow:hidden}
-    .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.45)}
-    .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0003,#0006 60%,#080808)}
-    .hero-content{position:relative;z-index:1;width:100%;padding-top:80px}
-    .eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#c9c9c6;margin-bottom:22px}
-    h1{font-size:clamp(54px,10vw,132px);line-height:.86;letter-spacing:-.055em;margin:0;max-width:900px}
-    .hero-bottom{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-top:38px}
-    .lead{max-width:460px;font-size:18px;color:#d0d0cc}.cta{display:inline-flex;padding:15px 22px;border:1px solid #fff;border-radius:999px;font-weight:700}
-    section{padding:120px 0;border-top:1px solid var(--line)}
-    .section-head{display:flex;justify-content:space-between;gap:30px;margin-bottom:45px}
-    .section-head h2{font-size:clamp(34px,5vw,68px);letter-spacing:-.04em;margin:0}.section-head p{max-width:380px;color:var(--muted);margin:8px 0}
-    .showreel{border-radius:22px;overflow:hidden;background:#111;aspect-ratio:16/9}.showreel video{width:100%;height:100%;object-fit:cover;display:block}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:var(--card);border:1px solid var(--line);padding:28px;border-radius:18px;min-height:190px}
-    .num{font-size:12px;color:#777;margin-bottom:55px}.card h3{font-size:24px;margin:0 0 8px}.card p{color:var(--muted);margin:0}
-    .about{display:grid;grid-template-columns:1fr 1fr;gap:70px}.about .big{font-size:clamp(32px,5vw,62px);line-height:1;letter-spacing:-.04em}
-    .about p{color:var(--muted);font-size:18px;max-width:520px}
-    .contact{display:flex;justify-content:space-between;align-items:end;gap:30px}.contact h2{font-size:clamp(50px,9vw,120px);line-height:.86;letter-spacing:-.06em;margin:0}
-    .contact-info{display:grid;gap:12px;text-align:right}.contact-info a{font-size:18px}
-    footer{padding:30px 0;color:#666;font-size:13px;display:flex;justify-content:space-between}
-    @media(max-width:800px){.navlinks{display:none}.wrap{padding:0 18px}.hero-bottom,.section-head,.about,.contact{display:block}.hero-bottom .cta{margin-top:25px}.grid{grid-template-columns:1fr}.about p{margin-top:30px}.contact-info{text-align:left;margin-top:35px}section{padding:80px 0}.showreel{aspect-ratio:9/16}}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Педан Илья — видеограф из Рязани. Свадьбы, дни рождения, выпускные, мероприятия, корпоративы, авто, проходки и танцы.">
+<title>Pedan Shoots — Педан Илья · Видеограф</title>
+<style>
+:root{--bg:#050606;--panel:#0d1010;--panel2:#121616;--line:#252a29;--text:#f5f4ef;--muted:#8f9591;--soft:#cfd2ce;--gold:#c8a875;--white:#f4f3ee;--acid:#b8ff00}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background:radial-gradient(circle at 20% 20%,#fff 0 1px,transparent 1px),radial-gradient(circle at 80% 70%,#fff 0 1px,transparent 1px);background-size:190px 190px,250px 250px;z-index:-1}a{text-decoration:none;color:inherit}.wrap{width:min(1180px,calc(100% - 48px));margin:auto}
+header{position:fixed;z-index:50;top:0;left:0;right:0;background:linear-gradient(180deg,rgba(5,6,6,.34) 0%,rgba(5,6,6,.14) 55%,rgba(5,6,6,0) 100%);backdrop-filter:blur(3px);border-bottom:1px solid rgba(255,255,255,.035)}.nav{height:88px;display:flex;align-items:center;justify-content:center;gap:24px;position:relative}.brand{display:none;align-items:center;gap:12px;min-width:150px}.brand img{width:150px;height:auto;display:block;mix-blend-mode:screen;filter:brightness(1.15);object-fit:contain}.brand-text{display:none}.nav nav{display:flex;gap:30px;font-size:11px;color:#d8dbd7}.nav nav a{transition:.25s;position:relative}.nav nav a:hover{color:#b8ff00}.nav-cta{position:absolute;right:0;top:50%;transform:translateY(-50%);padding:12px 19px;border-radius:999px;background:rgba(10,13,13,.45);border:1px solid rgba(255,255,255,.2);font-size:11px;white-space:nowrap;transition:.25s}.nav-cta:hover{background:#fff;color:#080909;border-color:#fff}
+.hero{min-height:790px;height:100vh;max-height:930px;position:relative;display:flex;align-items:flex-end;overflow:hidden}.hero-bg{position:absolute;inset:0;background:#101212}.hero-bg video{width:100%;height:100%;object-fit:cover;object-position:center;filter:contrast(1.06) saturate(.72);transform:scale(1.018)}.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#040606f2 0%,#040606b7 38%,#04060648 72%,#0406069e 100%),linear-gradient(0deg,#050606 0%,transparent 35%,#04060675 100%)}.hero-content{position:relative;z-index:1;width:100%;padding:0 0 105px;transform:none;text-align:center}.hero-content .lead{margin-left:auto;margin-right:auto}.hero-content .actions{justify-content:center}.eyebrow,.section-num{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#8d938f}.eyebrow{margin-bottom:18px}.hero h1{font-size:clamp(60px,9.5vw,126px);line-height:.8;letter-spacing:-.075em;margin:0 0 20px;font-weight:900}.hero-sub{font-size:clamp(24px,3vw,38px);color:#c5c8c4;letter-spacing:-.04em;margin-bottom:18px}.lead{max-width:510px;color:#d0d3cf;font-size:15px;line-height:1.5;margin:0 0 27px}.actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:49px;padding:0 21px;border-radius:999px;border:1px solid #ffffff28;font-size:12px;font-weight:700;transition:.25s}.btn.primary{background:var(--white);color:#090b0b;border-color:var(--white)}.btn:hover{transform:translateY(-2px)}.arrow{font-size:17px}
+.stats{display:grid;grid-template-columns:1fr 1fr 1fr 1.25fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.stat{padding:25px 28px 25px 0}.stat+.stat{border-left:1px solid var(--line);padding-left:28px}.num{font-size:30px;font-weight:800;letter-spacing:-.04em}.label{font-size:9px;color:#7f8581;letter-spacing:.12em;text-transform:uppercase;margin-top:6px}.quote{color:#8e9490;font-family:Georgia,serif;font-style:italic;font-size:15px;line-height:1.25;text-align:right;align-self:center}
+section{padding:105px 0}.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:35px;margin-bottom:35px}.title{font-size:clamp(44px,6vw,74px);line-height:.88;letter-spacing:-.065em;margin:8px 0 0}.section-copy{max-width:390px;color:#8d9390;font-size:13px;line-height:1.6}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}.filter{appearance:none;border:1px solid #282e2c;background:#0e1212;color:#aeb2ae;border-radius:999px;padding:9px 14px;font-size:11px;cursor:pointer;transition:.2s}.filter:hover{border-color:#555}.filter.active{background:var(--white);color:#080a0a;border-color:var(--white)}
+.portfolio-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.work{background:#0b0e0e;border:1px solid #202524;border-radius:18px;overflow:hidden;cursor:pointer;transition:transform .3s,border-color .3s,box-shadow .3s}.work:hover{transform:translateY(-5px);border-color:#4b504e;box-shadow:0 25px 60px #0009}.cover{position:relative;aspect-ratio:9/16;background:#070909;overflow:hidden}.cover img{width:100%;height:100%;object-fit:contain;display:block;transition:transform .5s}.work:hover .cover img{transform:scale(1.02)}.cover:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#050606df 0%,transparent 45%);pointer-events:none}.play{position:absolute;left:18px;bottom:18px;width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:var(--white);color:#080a0a;font-size:15px;z-index:2;box-shadow:0 12px 35px #0009}.work-info{padding:18px 19px 20px}.work-info small{font-size:9px;color:#747b77;letter-spacing:.16em}.work-info h3{font-size:20px;line-height:1.05;margin:7px 0 5px;letter-spacing:-.025em}.work-info p{font-size:11px;color:#878d89;margin:0}
+.service-intro{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:end;margin-bottom:28px}.service-note{color:#8c928e;font-size:13px;line-height:1.6;max-width:410px}.services{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:22px;overflow:hidden}.service{background:linear-gradient(145deg,#151919,#0c0f0f);padding:25px;min-height:190px;position:relative;transition:.25s}.service:hover{background:linear-gradient(145deg,#1b2020,#0f1212)}.service-index{font-size:9px;color:#737976;letter-spacing:.15em}.service h3{font-size:18px;margin:38px 0 8px}.service p{font-size:11px;line-height:1.5;color:#858b88;margin:0}
+.about{display:grid;grid-template-columns:.92fr 1.08fr;gap:75px;align-items:center}.about-photo{height:620px;border-radius:22px;overflow:hidden;border:1px solid #252a29;background:#111}.about-photo img{width:100%;height:100%;object-fit:cover;object-position:center 25%;filter:grayscale(1)}.about-copy .big{font-size:clamp(31px,4vw,52px);line-height:.96;letter-spacing:-.055em;margin:18px 0 25px}.about-copy .small{font-size:14px;line-height:1.65;color:#969c98;max-width:560px}.qualities{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:34px;border-top:1px solid var(--line)}.quality{border-bottom:1px solid var(--line);padding:16px 10px 16px 0;font-size:12px;color:#c8cbc8}.quality span{color:#727875;margin-right:10px}
+.cost{border:1px solid #282d2c;border-radius:24px;padding:52px;background:radial-gradient(circle at 85% 20%,#1b1915 0,#101212 30%,#0b0e0e 70%);display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:center}.cost h2{font-size:clamp(42px,5vw,68px);line-height:.9;letter-spacing:-.06em;margin:9px 0 20px}.cost p{max-width:590px;color:#999f9b;font-size:13px;line-height:1.6}.cost-side{border-left:1px solid var(--line);padding-left:40px}.cost-side strong{display:block;font-size:22px;margin-bottom:10px}.cost-side span{display:block;color:#858b87;font-size:12px;line-height:1.6;margin-bottom:22px}
+
+.cta{position:relative;overflow:hidden;min-height:420px;border-radius:25px;background:#111;border:1px solid #272b2a;display:flex;align-items:flex-end}.cta-bg{position:absolute;inset:0}.cta-bg img{width:100%;height:100%;object-fit:cover;object-position:center 28%;filter:grayscale(1);opacity:.42}.cta-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050707f2,#0507079c,#05070738),linear-gradient(0deg,#050707e8,transparent)}.cta-content{position:relative;z-index:1;padding:50px}.cta h2{font-size:clamp(48px,6vw,78px);line-height:.86;letter-spacing:-.065em;margin:9px 0 20px}.cta p{color:#a2a7a4;font-size:13px;margin:0 0 20px}.socials{display:flex;gap:8px;flex-wrap:wrap}.socials a{padding:10px 14px;border:1px solid #ffffff24;border-radius:999px;font-size:10px;color:#d4d7d3;transition:.2s}.socials a:hover{border-color:#fff;color:#fff}
+footer{padding:30px 0 42px;color:#666d69;font-size:10px;display:flex;justify-content:space-between;gap:20px;border-top:1px solid #1c2020;align-items:center}.footer-brand{display:flex;align-items:center;gap:16px}.footer-brand img{width:145px;filter:brightness(1.05)}
+.modal{display:none;position:fixed;inset:0;z-index:100;background:#000e;padding:24px;align-items:center;justify-content:center}.modal.open{display:flex}.modal-inner{width:min(920px,100%);position:relative}.modal video{display:block;width:100%;max-height:88vh;background:#000;border-radius:16px}.close{position:absolute;right:0;top:-48px;width:38px;height:38px;border:1px solid #fff3;background:#111;color:#fff;border-radius:50%;font-size:25px;cursor:pointer}
+@media(max-width:1000px){.nav-cta{display:none}.hero-content{transform:none}.nav nav{display:none}.nav-cta{display:none}.services{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr;gap:40px}.about-photo{height:520px}.cost{grid-template-columns:1fr;gap:25px}.cost-side{border-left:0;border-top:1px solid var(--line);padding:25px 0 0}.stats{grid-template-columns:repeat(2,1fr)}.quote{grid-column:2;text-align:left}}
+@media(max-width:620px){.wrap{width:calc(100% - 24px)}.brand img{width:112px}.nav{height:66px}.hero{min-height:760px;height:auto;padding-top:66px}.hero-content{padding-bottom:55px}.hero h1{font-size:18vw}.hero-sub{font-size:25px}.lead{font-size:13px}.stats{grid-template-columns:1fr 1fr}.stat{padding:18px 12px 18px 0}.stat+.stat{padding-left:14px}.num{font-size:25px}.quote{display:none}section{padding:76px 0}.section-head{display:block;margin-bottom:26px}.section-copy{margin-top:15px}.portfolio-grid{grid-template-columns:1fr;gap:12px}.work-info h3{font-size:18px}.play{width:44px;height:44px;left:13px;bottom:13px}.services{grid-template-columns:1fr}.service{min-height:150px}.service h3{margin-top:28px}.about-photo{height:450px}.qualities{grid-template-columns:1fr}.cost{padding:32px 24px}.cta{min-height:470px}.cta-content{padding:30px 24px}.cta h2{font-size:50px}footer{display:block;line-height:1.8}.footer-brand{margin-bottom:14px}}
+
+.site-intro{position:fixed;inset:0;z-index:9999;background:#000;display:grid;place-items:center;overflow:hidden;opacity:1;visibility:visible;transition:opacity 1.5s ease,visibility 0s linear 1.5s}.site-intro.hide{opacity:0;visibility:hidden}.site-intro video{width:100%;height:100%;object-fit:cover;display:block}.site-intro:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0003,#0000 45%,#0007)}body.intro-lock{overflow:hidden}@media(max-width:620px){.site-intro video{object-position:center}}@media(prefers-reduced-motion:reduce){.site-intro{transition:none}.site-intro.hide{opacity:0}}
+
+/* premium motion layer */
+html{scroll-behavior:smooth}body{overflow-x:hidden}.nav nav a:after{content:"";position:absolute;left:0;right:100%;bottom:-8px;height:1px;background:var(--acid);transition:right .3s ease}.nav nav a:hover:after{right:0}.nav-cta:hover{box-shadow:0 0 0 1px var(--acid),0 0 28px rgba(184,255,0,.12)}
+.btn.primary:hover{background:var(--acid);border-color:var(--acid);color:#050606;box-shadow:0 12px 35px rgba(184,255,0,.16)}
+.filter.active{background:var(--acid);border-color:var(--acid)}.filter:hover{border-color:var(--acid);color:var(--acid)}
+.service{border:1px solid transparent}.service:hover{border-color:rgba(184,255,0,.32);box-shadow:inset 0 0 0 1px rgba(184,255,0,.06)}.service-index{transition:.25s}.service:hover .service-index{color:var(--acid)}
+.work:hover{border-color:rgba(184,255,0,.35)}.work:hover .play{background:var(--acid)}
+.socials a:hover{border-color:var(--acid);color:var(--acid)}
+.hero-content,.stats,.section-head,.filters,.work,.service-intro,.service,.about,.cost,.cta,footer{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.hero-content.is-visible,.stats.is-visible,.section-head.is-visible,.filters.is-visible,.work.is-visible,.service-intro.is-visible,.service.is-visible,.about.is-visible,.cost.is-visible.is-visible,.cta.is-visible,footer.is-visible{opacity:1;transform:none}
+.work:nth-child(2),.service:nth-child(2){transition-delay:.06s}.work:nth-child(3),.service:nth-child(3){transition-delay:.12s}.work:nth-child(4),.service:nth-child(4){transition-delay:.18s}.work:nth-child(5),.service:nth-child(5){transition-delay:.24s}.work:nth-child(6),.service:nth-child(6){transition-delay:.30s}.work:nth-child(7),.service:nth-child(7){transition-delay:.36s}.service:nth-child(8){transition-delay:.42s}
+.hero-content.is-visible h1{animation:heroTitle .9s cubic-bezier(.2,.7,.2,1) both}.hero-content.is-visible .eyebrow{animation:fadeUp .6s .1s both}.hero-content.is-visible .hero-sub{animation:fadeUp .7s .2s both}.hero-content.is-visible .lead{animation:fadeUp .7s .3s both}.hero-content.is-visible .actions{animation:fadeUp .7s .4s both}
+@keyframes heroTitle{from{opacity:0;transform:translateY(20px) scale(.985);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero-bg video{animation:heroZoom 14s ease-out both}@keyframes heroZoom{from{transform:scale(1.045)}to{transform:scale(1.018)}}
+@media(max-width:620px){.nav{background:linear-gradient(180deg,rgba(5,6,6,.28),rgba(5,6,6,0))}.hero-content{padding-left:12px;padding-right:12px}.hero h1{letter-spacing:-.07em}.hero-sub{font-size:22px}.lead{max-width:330px}.actions{gap:8px}.btn{min-height:46px;padding:0 17px}.portfolio-grid{gap:14px}.cover{aspect-ratio:9/16}.about-photo{height:430px}.cta-content{padding:28px 20px}.cost{padding:28px 20px}}
+@media(prefers-reduced-motion:reduce){.hero-bg video{animation:none}.hero-content,.stats,.section-head,.filters,.work,.service-intro,.service,.about,.cost,.cta,footer{opacity:1;transform:none;transition:none}}
+
+/* FINAL PREMIUM POLISH */
+:root{--acid:#b8ff00}
+html{scroll-behavior:smooth}
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+header{background:linear-gradient(180deg,rgba(5,6,6,.22),rgba(5,6,6,.07) 72%,transparent);backdrop-filter:blur(8px) saturate(115%);-webkit-backdrop-filter:blur(8px) saturate(115%);border-bottom:1px solid rgba(255,255,255,.045)}
+.nav{height:82px}
+.nav nav a{color:rgba(232,235,231,.82);transition:color .3s ease,transform .3s ease}
+.nav nav a:after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:1px;background:var(--acid);transform:scaleX(0);transform-origin:center;transition:transform .3s ease}
+.nav nav a:hover{color:#fff;transform:translateY(-1px)}
+.nav nav a:hover:after{transform:scaleX(1)}
+.nav-cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:46px;min-width:194px;padding:0 22px;line-height:1;vertical-align:middle;background:rgba(8,10,10,.22);border-color:rgba(255,255,255,.16);box-shadow:0 8px 30px rgba(0,0,0,.12);transition:background .3s ease,color .3s ease,border-color .3s ease,transform .3s ease}
+.nav-cta:hover{background:var(--acid);color:#070909;border-color:var(--acid);transform:translateY(-50%) translateY(-1px)}
+.hero-bg video{filter:contrast(1.07) saturate(.74);transition:filter .6s ease}
+.hero-bg:after{background:linear-gradient(90deg,rgba(4,6,6,.82) 0%,rgba(4,6,6,.34) 44%,rgba(4,6,6,.16) 72%,rgba(4,6,6,.52) 100%),linear-gradient(0deg,rgba(5,6,6,.96) 0%,rgba(5,6,6,.12) 42%,rgba(4,6,6,.52) 100%)}
+.hero-content{padding-bottom:108px;padding-top:82px}
+.eyebrow{color:rgba(184,255,0,.78);font-weight:700;letter-spacing:.28em}
+.hero h1{letter-spacing:-.085em;text-shadow:0 8px 40px rgba(0,0,0,.2)}
+.hero-sub{color:rgba(235,237,234,.86);font-weight:600;letter-spacing:-.045em}
+.lead{color:rgba(225,228,224,.74);line-height:1.65}
+.btn{min-height:50px;padding:0 22px;border-color:rgba(255,255,255,.18);transition:transform .3s ease,background .3s ease,border-color .3s ease,color .3s ease,box-shadow .3s ease}
+.btn.primary{box-shadow:0 12px 35px rgba(0,0,0,.2)}
+.btn:not(.primary):hover{border-color:var(--acid);color:var(--acid);background:rgba(184,255,0,.04);box-shadow:0 10px 30px rgba(0,0,0,.15)}
+.btn.primary:hover{background:var(--acid);border-color:var(--acid);box-shadow:0 14px 38px rgba(184,255,0,.12)}
+
+
+.hero-meta:hover 
+.section-num{color:rgba(184,255,0,.72)}
+.filters button.active{background:var(--acid);color:#070909;border-color:var(--acid);box-shadow:0 0 0 1px rgba(184,255,0,.12),0 8px 28px rgba(184,255,0,.10);font-weight:700}.filters button:hover{color:var(--acid);border-color:rgba(184,255,0,.45);transform:translateY(-2px)}.filters button.active:hover{color:#070909;background:#c3ff1a}.filter{transition:color .25s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease}
+.work,.service,.cost,.cta{transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s ease,border-color .35s ease}
+.work:hover{transform:translateY(-5px)}
+.service:hover{transform:translateY(-4px);border-color:rgba(184,255,0,.28)}
+.work .cover:after{transition:opacity .45s ease}
+.work:hover .cover:after{opacity:.2}
+footer a{transition:color .25s ease}
+footer a:hover{color:var(--acid)}
+@media(max-width:1000px){.hero-content{padding-top:82px;padding-bottom:88px}.hero h1{font-size:clamp(58px,10vw,104px)}}
+@media(max-width:620px){header{background:linear-gradient(180deg,rgba(5,6,6,.18),transparent);backdrop-filter:blur(6px)}.nav{height:64px}.hero{min-height:calc(100svh - 0px);height:auto}.hero-content{padding:78px 18px 58px}.hero h1{font-size:17vw;line-height:.84;letter-spacing:-.075em}.hero-sub{font-size:21px;line-height:1.05;margin-bottom:15px}.eyebrow{font-size:9px;letter-spacing:.22em;margin-bottom:14px}.lead{font-size:13px;max-width:340px;line-height:1.55;margin-bottom:22px}.actions{justify-content:center}.btn{min-height:46px;padding:0 17px}.hero-bg video{object-position:center center}.hero-bg:after{background:linear-gradient(90deg,rgba(4,6,6,.64),rgba(4,6,6,.2) 55%,rgba(4,6,6,.5)),linear-gradient(0deg,rgba(5,6,6,.95),rgba(5,6,6,.08) 48%,rgba(4,6,6,.4))}}
+
+/* EXTRA MOTION */
+:root{--ease-premium:cubic-bezier(.16,1,.3,1)}
+body:after{content:"";position:fixed;left:0;top:0;width:100%;height:2px;background:var(--acid);transform:scaleX(0);transform-origin:left;z-index:10000;pointer-events:none;box-shadow:0 0 18px rgba(184,255,0,.35)}
+.hero-bg video{animation:heroDrift 14s ease-in-out infinite alternate}
+@keyframes heroDrift{from{transform:scale(1.018)}to{transform:scale(1.045)}}
+.hero-content .eyebrow,.hero-content h1,.hero-content .hero-sub,.hero-content .lead,.hero-content .actions{animation:heroEnter 1s var(--ease-premium) both}
+.hero-content h1{animation-delay:.08s}.hero-content .hero-sub{animation-delay:.16s}.hero-content .lead{animation-delay:.24s}.hero-content .actions{animation-delay:.32s}
+@keyframes heroEnter{from{opacity:0;transform:translateY(22px);filter:blur(7px)}to{opacity:1;transform:none;filter:none}}
+.stats .stat{transition:transform .45s var(--ease-premium),background .35s ease}.stats .stat:hover{transform:translateY(-4px);background:rgba(184,255,0,.025)}
+.stat .num{transition:color .3s ease,transform .3s ease}.stat:hover .num{color:var(--acid);transform:translateX(4px)}
+.section-num{transition:letter-spacing .35s ease}.section-head:hover .section-num,.service-intro:hover .section-num{letter-spacing:.32em}
+.work,.service,.review,.cost,.cta{will-change:transform}
+.work{position:relative}.work:before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;background:linear-gradient(120deg,transparent 20%,rgba(184,255,0,.10) 50%,transparent 80%);transform:translateX(-100%);transition:opacity .25s ease}.work:hover:before{opacity:1;animation:shine .9s ease}
+@keyframes shine{to{transform:translateX(100%)}}
+.service{overflow:hidden}.service:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--acid);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease-premium)}.service:hover:after{transform:scaleX(1)}
+.filter.pop{animation:filterPop .45s var(--ease-premium)}
+@keyframes filterPop{50%{transform:scale(1.06)}100%{transform:scale(1)}}
+.work.filter-in{animation:workIn .55s var(--ease-premium) both}
+@keyframes workIn{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:none}}
+.btn,.nav-cta,.socials a{position:relative;overflow:hidden}.btn:after,.nav-cta:after,.socials a:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.18) 50%,transparent 65%);transform:translateX(-130%);transition:transform .7s ease;pointer-events:none}.btn:hover:after,.nav-cta:hover:after,.socials a:hover:after{transform:translateX(130%)}
+.about-photo{position:relative}.about-photo:after{content:"";position:absolute;inset:0;border:1px solid rgba(184,255,0,.0);border-radius:inherit;transition:border-color .4s ease,box-shadow .4s ease;pointer-events:none}.about-photo:hover:after{border-color:rgba(184,255,0,.35);box-shadow:inset 0 0 45px rgba(184,255,0,.06)}
+@media(prefers-reduced-motion:reduce){.hero-bg video{animation:none}.hero-content .eyebrow,.hero-content h1,.hero-content .hero-sub,.hero-content .lead,.hero-content .actions{animation:none}.work:before,.btn:after,.nav-cta:after,.socials a:after{display:none}}
+
+/* PREMIUM ADDITIONS */
+.marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;color:#747a76;font-size:9px;letter-spacing:.24em;text-transform:uppercase;white-space:nowrap}
+.marquee-track{display:flex;width:max-content;gap:38px;animation:marquee 24s linear infinite}.marquee-track span::after{content:'✦';margin-left:38px;color:var(--acid)}
+@keyframes marquee{to{transform:translateX(calc(-50% - 19px))}}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.process-card{position:relative;background:#0b0e0e;padding:28px;min-height:230px;overflow:hidden;transition:transform .45s var(--ease-premium),background .45s ease}.process-card:hover{transform:translateY(-6px);background:#111515}.process-card:before{content:'';position:absolute;width:120px;height:120px;border-radius:50%;right:-55px;top:-55px;background:rgba(184,255,0,.08);filter:blur(2px);transition:transform .5s ease}.process-card:hover:before{transform:scale(1.5)}.process-num{font-size:10px;color:var(--acid);letter-spacing:.18em}.process-card h3{font-size:24px;letter-spacing:-.04em;margin:52px 0 10px}.process-card p{font-size:12px;line-height:1.55;color:#858b88;max-width:240px}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:22px;overflow:hidden}.why-item{background:#0c1010;padding:30px;min-height:175px;transition:.4s}.why-item:hover{background:#131818}.why-item strong{display:block;font-size:13px;color:#fff;margin-bottom:42px}.why-item p{margin:0;color:#858b88;font-size:12px;line-height:1.55;max-width:360px}.why-item strong span{color:var(--acid);margin-right:10px}
+.quote-line{font-size:clamp(28px,4vw,52px);line-height:1;letter-spacing:-.055em;max-width:900px;margin:0;color:#ecece7}.quote-line em{color:var(--acid);font-style:normal}
+.calc{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}.calc-copy{padding-top:8px}.calc-copy p{max-width:450px;color:#8d9390;font-size:13px;line-height:1.65}.calc-form{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#7e8581}.field input,.field select,.field textarea{width:100%;border:1px solid #252b29;background:#0c1010;color:#e8e9e5;border-radius:13px;padding:13px 14px;font:inherit;font-size:12px;outline:none;transition:border-color .25s,box-shadow .25s}.field textarea{min-height:105px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--acid);box-shadow:0 0 0 3px rgba(184,255,0,.07)}.calc-form .btn{grid-column:1/-1;justify-self:start;margin-top:4px}.form-status{grid-column:1/-1;color:#9ca29e;font-size:11px;line-height:1.5;min-height:17px}.form-status.ok{color:var(--acid)}
+.contact-grid{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end}.socials{margin-top:8px}.contact-note{max-width:600px;color:#969c98;font-size:13px;line-height:1.6}
+/* extra motion */
+.reveal-up{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s var(--ease-premium)}.reveal-up.is-visible{opacity:1;transform:none}.process-card:nth-child(2),.why-item:nth-child(2){transition-delay:.06s}.process-card:nth-child(3),.why-item:nth-child(3){transition-delay:.12s}.process-card:nth-child(4),.why-item:nth-child(4){transition-delay:.18s}
+@media(max-width:900px){.process-grid{grid-template-columns:1fr 1fr}.calc{grid-template-columns:1fr;gap:30px}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.process-grid,.why-grid{grid-template-columns:1fr}.calc-form{grid-template-columns:1fr}.field.full{grid-column:auto}.calc-form .btn,.form-status{grid-column:auto}.marquee-track{animation-duration:18s}.process-card h3{margin-top:34px}.quote-line{font-size:32px}}
+
+/* Floating contact widget */
+.contact-fab{position:fixed;right:28px;bottom:28px;width:64px;height:64px;border:1px solid rgba(184,255,0,.75);border-radius:50%;background:rgba(12,14,12,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:grid;place-items:center;color:#b8ff00;cursor:pointer;z-index:80;box-shadow:0 12px 40px rgba(0,0,0,.45),0 0 0 5px rgba(184,255,0,.06);transition:transform .35s cubic-bezier(.2,.8,.2,1),background .35s,border-color .35s,box-shadow .35s}
+.contact-fab:hover{transform:translateY(-5px) scale(1.04);background:#b8ff00;color:#070807;border-color:#b8ff00;box-shadow:0 18px 55px rgba(184,255,0,.2)}
+.contact-fab svg{width:25px;height:25px;transition:transform .35s}.contact-fab.open svg{transform:rotate(90deg)}
+.contact-panel{position:fixed;right:28px;bottom:105px;width:min(390px,calc(100vw - 32px));padding:28px;border:1px solid rgba(255,255,255,.13);border-radius:24px;background:rgba(12,13,12,.94);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);z-index:79;box-shadow:0 28px 90px rgba(0,0,0,.55);opacity:0;visibility:hidden;transform:translateY(18px) scale(.97);transform-origin:bottom right;transition:opacity .35s,transform .45s cubic-bezier(.2,.8,.2,1),visibility .35s}
+.contact-panel.open{opacity:1;visibility:visible;transform:translateY(0) scale(1)}
+.contact-panel h3{margin:0 0 8px;font-size:28px;line-height:1.05;letter-spacing:-.03em}.contact-panel .contact-sub{margin:0 0 22px;color:#929792;font-size:14px;line-height:1.55}.contact-list{border-top:1px solid rgba(255,255,255,.1)}
+.contact-link{display:flex;align-items:center;gap:14px;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.08);text-decoration:none;color:#f4f4f1;transition:transform .25s,color .25s}.contact-link:hover{transform:translateX(5px);color:#b8ff00}.contact-icon{width:44px;height:44px;flex:0 0 44px;border-radius:13px;background:rgba(184,255,0,.09);border:1px solid rgba(184,255,0,.18);display:grid;place-items:center;color:#b8ff00;font-weight:700;font-size:13px}.contact-link strong{display:block;font-size:15px}.contact-link span{display:block;margin-top:3px;color:#777c78;font-size:12px}.contact-apply{display:flex;align-items:center;justify-content:space-between;margin-top:18px;padding:16px 17px;border-radius:15px;background:#b8ff00;color:#070807;text-decoration:none;font-weight:800;transition:transform .25s,box-shadow .25s}.contact-apply:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(184,255,0,.16)}
+@media(max-width:600px){.contact-fab{right:16px;bottom:16px;width:58px;height:58px}.contact-panel{right:16px;bottom:86px;padding:22px;border-radius:20px}.contact-panel h3{font-size:24px}}
+
+/* PREMIUM HERO / HEADER POLISH */
+header{
+  background:linear-gradient(180deg,rgba(5,6,6,.42) 0%,rgba(5,6,6,.18) 58%,rgba(5,6,6,0) 100%);
+  backdrop-filter:blur(5px) saturate(110%);
+  -webkit-backdrop-filter:blur(5px) saturate(110%);
+}
+.nav{
+  height:76px;
+}
+.nav nav{
+  gap:30px;
+  font-size:13px;
+  font-weight:500;
+}
+.nav nav a{
+  text-shadow:0 1px 12px rgba(0,0,0,.5);
+}
+.nav-cta{
+  height:46px;
+  min-width:202px;
+  padding:0 23px;
+  font-size:13px;
+  font-weight:500;
+  letter-spacing:.01em;
+  box-shadow:0 1px 18px rgba(0,0,0,.16);
+}
+
+/* Hero title: slightly less massive, with more breathing room. */
+.hero-content h1{
+  font-size:clamp(64px,8.15vw,132px) !important;
+  letter-spacing:-.055em;
+  line-height:.91;
+}
+.hero-content .eyebrow{
+  margin-bottom:20px !important;
+}
+.hero-content h1 + *{
+  margin-top:24px !important;
+}
+.hero-content .hero-subtitle,
+.hero-content .subtitle,
+.hero-content p{
+  text-shadow:0 1px 16px rgba(0,0,0,.55);
+}
+
+/* Keep the lime accent crisp and restrained. */
+.hero-content .eyebrow{
+  color:#b8ff00 !important;
+  letter-spacing:.24em;
+}
+
+@media(max-width:1000px){
+  .nav{height:70px}
+  .nav nav{gap:22px;font-size:12px}
+  .nav-cta{min-width:184px;height:44px}
+}
+@media(max-width:620px){
+  .nav{height:64px}
+  .nav nav{gap:14px;font-size:11px}
+  .nav-cta{min-width:150px;height:42px;padding:0 15px}
+  .hero-content h1{font-size:clamp(46px,13vw,76px) !important}
+}
+
+</style>
+
+<style id="header-discuss-style">
+.header-discuss{margin-left:32px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height:42px;
+  padding:0 18px;
+  border:1px solid rgba(184,255,0,.72);
+  border-radius:999px;
+  background:rgba(184,255,0,.08);
+  color:#b8ff00;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  text-decoration:none;
+  white-space:nowrap;
+  transition:transform .25s ease, background .25s ease, color .25s ease, box-shadow .25s ease;
+}
+.header-discuss:hover{
+  transform:translateY(-1px);
+  background:#b8ff00;
+  color:#050505;
+  box-shadow:0 10px 30px rgba(184,255,0,.16);
+}
+@media (max-width:640px){
+  .header-discuss{margin-left:32px;height:38px;padding:0 14px;font-size:10px}
+}
+</style>
+
 </head>
-<body>
-<nav><div class="wrap inner"><div class="logo">PEDAN / VIDEO</div><div class="navlinks"><a href="#work">Работы</a><a href="#services">Услуги</a><a href="#about">Обо мне</a><a href="#contact">Контакты</a></div></div></nav>
+<body class="intro-lock">
+<div class="site-intro" id="siteIntro" aria-label="Pedan Shoots"><video autoplay muted playsinline preload="auto"><source src="assets/site-intro.mp4" type="video/mp4"></video></div>
 
-<header class="hero">
-  <div style="position:absolute;inset:0;background:radial-gradient(circle at 70% 35%,#242424,#080808 65%);"></div>
-  <div class="hero-content wrap">
-    <div class="eyebrow">Видеограф · Рязань</div>
-    <h1>Педан<br>Илья.</h1>
-    <div class="hero-bottom">
-      <div class="lead">Снимаю короткие видео, которые хочется досмотреть. Reels, контент для брендов и личных проектов.</div>
-      <a class="cta" href="#contact">Обсудить съёмку →</a>
-    </div>
-  </div>
+<header><div class="wrap nav"><a class="brand" href="#top"><img src="assets/brand-logo.png" alt="Pedan Shoots"><span class="brand-text">PEDAN SHOOTS</span></a><nav><a href="#portfolio">Портфолио</a><a href="#services">Услуги</a><a href="#about">Обо мне</a><a href="#price">Стоимость</a><a href="#contacts">Контакты</a></nav></div>
+<a class="header-discuss" href="https://t.me/pedan_shoots" target="_blank" rel="noopener">Обсудить проект</a>
 </header>
-
-<main>
-<section id="work"><div class="wrap">
-  <div class="section-head"><h2>Избранное.</h2><p>Один из примеров работ. Добавим сюда остальные ролики и кейсы из твоего портфолио.</p></div>
-  <div class="showreel" style="display:grid;place-items:center;background:#111;color:#777;font-size:14px;letter-spacing:.08em;text-transform:uppercase">Портфолио · видео</div>
-</div></section>
-
-<section id="services"><div class="wrap">
-  <div class="section-head"><h2>Что снимаю.</h2><p>Формат и объём съёмки подстраиваем под задачу — от одного Reels до регулярного контента.</p></div>
-  <div class="grid">
-    <div class="card"><div class="num">01</div><h3>Reels / Shorts</h3><p>Динамичные вертикальные ролики для соцсетей.</p></div>
-    <div class="card"><div class="num">02</div><h3>Реклама</h3><p>Видео для бизнеса, продукта, заведения или личного бренда.</p></div>
-    <div class="card"><div class="num">03</div><h3>Съёмка + монтаж</h3><p>Полный цикл: идея, съёмка, монтаж, музыка и финальная подготовка.</p></div>
-  </div>
-</div></section>
-
-<section id="about"><div class="wrap about">
-  <div class="big">Кадр должен<br>работать на тебя.</div>
-  <div><p>Я — Педан Илья, видеограф из Рязани. Помогаю превращать идеи, продукты и атмосферу в короткие видео, которые выглядят современно и цепляют с первых секунд.</p><p>Работаю с вертикальным форматом и контентом для социальных сетей.</p></div>
-</div></section>
-
-<section id="contact"><div class="wrap contact">
-  <h2>Снимем?</h2>
-  <div class="contact-info">
-    <div>Рязань · Россия</div>
-    <a href="https://www.instagram.com/pedan_shorts_portfolio/" target="_blank" rel="noopener">Instagram →</a>
-    <a href="mailto:hello@pedan.video">hello@pedan.video</a>
-  </div>
-</div></section>
+<main id="top">
+<section class="hero"><div class="hero-bg"><video autoplay muted loop playsinline preload="metadata" poster="assets/ilya-pedan.png"><source src="assets/hero-timeline.mp4" type="video/mp4"></video></div><div class="wrap hero-content"><div class="eyebrow">PEDAN SHOOTS · РЯЗАНЬ</div><h1>ПЕДАН ИЛЬЯ</h1><div class="hero-sub">ВИДЕОГРАФ · РЯЗАНЬ · REELS</div><p class="lead">Создаю видео, которые передают атмосферу, эмоции и характер события — от первой идеи до готового ролика.</p><div class="actions"><a class="btn primary" href="#portfolio">Смотреть работы <span class="arrow">→</span></a><a class="btn" href="https://t.me/pedan_shoots" target="_blank">Написать мне <span class="arrow">→</span></a></div></div></section>
+<div class="wrap"><div class="stats"><div class="stat"><div class="num">7+</div><div class="label">лет в видео</div></div><div class="stat"><div class="num">1000+</div><div class="label">реализованных проектов</div></div><div class="stat"><div class="num">РЗН · МСК</div><div class="label">Рязань · Москва</div></div><div class="quote">«Хорошее видео<br>говорит громче слов»</div></div></div>
+<div class="marquee" aria-hidden="true"><div class="marquee-track">
+<span>PEDAN SHOOTS</span><span>VIDEO</span><span>RYAZAN</span><span>MOSCOW</span><span>REELS</span>
+<span>PEDAN SHOOTS</span><span>VIDEO</span><span>RYAZAN</span><span>MOSCOW</span><span>REELS</span>
+</div></div>
+<section id="portfolio"><div class="wrap"><div class="section-head"><div><div class="section-num">01 / Портфолио</div><h2 class="title">Мои работы</h2></div><div class="section-copy">Избранные проекты. Выбирай категорию или нажимай на обложку — видео откроется в большом окне.</div></div><div class="filters"><button class="filter active" data-filter="all">Все</button><button class="filter" data-filter="weddings">Свадьбы</button><button class="filter" data-filter="birthdays">День рождения</button><button class="filter" data-filter="graduation">Выпускной</button><button class="filter" data-filter="events">Мероприятия</button><button class="filter" data-filter="corporate">Корпоративы</button><button class="filter" data-filter="auto">Авто</button><button class="filter" data-filter="walk">Проходки</button><button class="filter" data-filter="dance">Танцы</button></div>
+<div class="portfolio-grid">
+<div class="work" data-cat="weddings" onclick="openVideo('assets/wedding-reel.mp4','Дмитрий и Марина')"><div class="cover"><img src="assets/wedding-reel-cover.png" alt="Дмитрий и Марина"><div class="play">▶</div></div><div class="work-info"><small>01 · СВАДЬБЫ</small><h3>Дмитрий и Марина</h3><p>Свадебный Reels</p></div></div>
+<div class="work" data-cat="weddings" onclick="openVideo('assets/wedding-reel-elizaveta.mp4','Дмитрий и Елизавета')"><div class="cover"><img src="assets/wedding-reel-elizaveta.jpg" alt="Дмитрий и Елизавета"><div class="play">▶</div></div><div class="work-info"><small>02 · СВАДЬБЫ</small><h3>Дмитрий и Елизавета</h3><p>Свадебный Reels</p></div></div>
+<div class="work" data-cat="weddings" onclick="openVideo('assets/wedding-reel-anastasia.mp4','Михаил и Анастасия')"><div class="cover"><img src="assets/wedding-reel-anastasia.jpg" alt="Михаил и Анастасия"><div class="play">▶</div></div><div class="work-info"><small>03 · СВАДЬБЫ</small><h3>Михаил и Анастасия</h3><p>Свадебный Reels</p></div></div>
+<div class="work" data-cat="birthdays" onclick="openVideo('assets/birthday-maria.mp4','День рождения Марии')"><div class="cover"><img src="assets/birthday-maria.jpg" alt="День рождения Марии"><div class="play">▶</div></div><div class="work-info"><small>04 · ДЕНЬ РОЖДЕНИЯ</small><h3>День рождения Марии</h3><p>Reels · День рождения</p></div></div>
+<div class="work" data-cat="graduation" onclick="openVideo('assets/graduation-school45.mp4','Выпускной · Школа 45')"><div class="cover"><img src="assets/graduation-school45.jpg" alt="Выпускной Школа 45"><div class="play">▶</div></div><div class="work-info"><small>05 · ВЫПУСКНОЙ</small><h3>Выпускной</h3><p>Школа 45 · Reels</p></div></div>
+<div class="work" data-cat="birthdays" onclick="openVideo('assets/birthday-david.mp4','День рождения Давида')"><div class="cover"><img src="assets/birthday-david.jpg" alt="День рождения Давида"><div class="play">▶</div></div><div class="work-info"><small>06 · ДЕНЬ РОЖДЕНИЯ</small><h3>День рождения Давида</h3><p>Детский праздник · Reels</p></div></div>
+<div class="work" data-cat="events" onclick="openVideo('assets/novoe-semikishino.mp4','Новое Сёмкино')"><div class="cover"><img src="assets/novoe-semikishino.jpg" alt="Новое Сёмкино"><div class="play">▶</div></div><div class="work-info"><small>07 · МЕРОПРИЯТИЯ</small><h3>Новое Сёмкино</h3><p>Отчётный Reels · Мероприятие</p></div></div>
+</div></div></section>
+<section id="services"><div class="wrap"><div class="service-intro"><div><div class="section-num">02 / Услуги</div><h2 class="title">Снимаю то,<br>что важно</h2></div><p class="service-note">Стоимость не привязываю к шаблонному прайсу. Под каждую задачу рассчитываю формат, объём съёмки и монтажа индивидуально.</p></div><div class="services">
+<div class="service"><div class="service-index">01</div><h3>Свадьбы</h3><p>Эмоции, детали и атмосфера дня в фильме или коротких вертикальных роликах.</p></div>
+<div class="service"><div class="service-index">02</div><h3>Дни рождения</h3><p>Живой праздник, гости, эмоции и моменты, которые хочется пересматривать.</p></div>
+<div class="service"><div class="service-index">03</div><h3>Выпускные</h3><p>Динамичный Reels и атмосферная история одного из важных дней.</p></div>
+<div class="service"><div class="service-index">04</div><h3>Мероприятия</h3><p>Репортажная съёмка, энергия площадки и готовый ролик после события.</p></div>
+<div class="service"><div class="service-index">05</div><h3>Корпоративы</h3><p>Команда, масштаб и настроение события — без постановочной сухости.</p></div>
+<div class="service"><div class="service-index">06</div><h3>Авто</h3><p>Кинематографичные проходки, детали, движение и характер автомобиля.</p></div>
+<div class="service"><div class="service-index">07</div><h3>Проходки</h3><p>Стильные вертикальные ролики с акцентом на человека, образ и движение.</p></div>
+<div class="service"><div class="service-index">08</div><h3>Танцы</h3><p>Динамика, ритм и монтаж, который работает вместе с движением.</p></div>
+</div></div></section>
+<section id="about"><div class="wrap about"><div class="about-photo"><img src="assets/about-ilya.jpg" alt="Илья Педан"></div><div class="about-copy"><div class="section-num">03 / Обо мне</div><p class="big">Снимаю людей,<br>идеи и <strong>эмоции.</strong></p><p class="small">Меня зовут Илья. Занимаюсь видео 7 лет. Снимаю в Рязани и Москве, выезжаю на проекты. Для меня важно не просто снять красивую картинку, а передать атмосферу, характер и смысл происходящего.</p><div class="qualities"><div class="quality"><span>01</span>Креативный подход</div><div class="quality"><span>02</span>Внимание к деталям</div><div class="quality"><span>03</span>Соблюдение сроков</div><div class="quality"><span>04</span>Открытая коммуникация</div></div></div></div></section>
+<section id="process"><div class="wrap"><div class="section-head"><div><div class="section-num">04 / Как я работаю</div><h2 class="title">От идеи<br>до готового кадра</h2></div><div class="section-copy">Простой процесс без лишней бюрократии: быстро обсуждаем задачу и собираем съёмку под неё.</div></div><div class="process-grid"><div class="process-card reveal-up"><div class="process-num">01 / СТАРТ</div><h3>Заявка</h3><p>Рассказываете, что нужно снять, где и когда. Можно написать буквально в двух словах.</p></div><div class="process-card reveal-up"><div class="process-num">02 / ИДЕЯ</div><h3>Обсуждение</h3><p>Определяем формат, настроение, объём съёмки и результат, который вы хотите получить.</p></div><div class="process-card reveal-up"><div class="process-num">03 / СЪЁМКА</div><h3>В кадре</h3><p>Работаю спокойно и незаметно, ловлю живые эмоции, детали и характер события.</p></div><div class="process-card reveal-up"><div class="process-num">04 / ФИНИШ</div><h3>Монтаж</h3><p>Собираю историю, делаю цвет и финальную обработку — вы получаете готовый ролик.</p></div></div></div></section>
+<section id="why"><div class="wrap"><div class="section-head"><div><div class="section-num">05 / Почему я</div><h2 class="title">Видео,<br>которое чувствуется</h2></div><p class="section-copy">Не просто набор красивых кадров. Важны эмоция, ритм и ощущение момента.</p></div><div class="why-grid"><div class="why-item reveal-up"><strong><span>01</span>Живые эмоции</strong><p>Стараюсь не заставлять момент выглядеть искусственно — настоящие реакции всегда сильнее постановки.</p></div><div class="why-item reveal-up"><strong><span>02</span>Кинематографичная картинка</strong><p>Композиция, свет, движение камеры и монтаж работают вместе, чтобы ролик выглядел цельно.</p></div><div class="why-item reveal-up"><strong><span>03</span>Внимание к деталям</strong><p>Смотрю не только на главный сюжет, но и на небольшие детали, из которых складывается атмосфера.</p></div><div class="why-item reveal-up"><strong><span>04</span>Открытая коммуникация</strong><p>Всегда можно обсудить идею, референс или пожелания — без сложных формальностей.</p></div></div></div></section>
+<section><div class="wrap"><p class="quote-line">«Хорошее видео — это не просто картинка. Это момент, к которому хочется <em>вернуться.</em>»</p></div></section>
+<section id="price"><div class="wrap"><div class="calc"><div class="calc-copy"><div class="section-num">06 / Стоимость</div><h2 class="title">Рассчитаем<br>ваш проект</h2><p>Фиксированного прайса на сайте нет. Заполни несколько полей — заявка соберётся автоматически, а дальше обсудим детали лично.</p><a class="btn" href="https://t.me/pedan_shoots" target="_blank">Сразу в Telegram →</a></div><form class="calc-form" id="calcForm"><div class="field"><label for="type">Тип съёмки</label><select id="type"><option>Свадьба</option><option>День рождения</option><option>Выпускной</option><option>Мероприятие</option><option>Корпоратив</option><option>Авто</option><option>Проходка</option><option>Танцы</option><option>Другое</option></select></div><div class="field"><label for="city">Город</label><select id="city"><option>Рязань</option><option>Москва</option><option>Другой город</option></select></div><div class="field"><label for="date">Дата</label><input id="date" type="date"></div><div class="field"><label for="format">Формат</label><select id="format"><option>Reels / вертикальный ролик</option><option>Репортажный ролик</option><option>Съёмка + несколько Reels</option><option>Другое</option></select></div><div class="field full"><label for="comment">Что нужно снять?</label><textarea id="comment" placeholder="Коротко опишите задачу, длительность или пожелания"></textarea></div><button class="btn primary" type="submit">Сформировать заявку →</button><div class="form-status" id="formStatus"></div></form></div></div></section>
+<section id="contacts"><div class="wrap"><div class="cta"><div class="cta-bg"><img src="assets/about-ilya.jpg" alt="Педан Илья"></div><div class="cta-content"><div class="section-num">07 / Контакты</div><h2>ГОТОВЫ СОЗДАТЬ<br>ЧТО-ТО КРУТОЕ?</h2><p>Напишите мне — обсудим идею, формат, дату и стоимость проекта. Отвечу лично и помогу собрать оптимальный вариант.</p><div class="actions"><a class="btn primary" href="https://t.me/pedan_shoots" target="_blank">Обсудить проект <span class="arrow">→</span></a><div class="socials"><a href="https://www.instagram.com/pedan_shoots_/" target="_blank">Instagram</a><a href="https://wa.me/qr/VIJ52A3CUV3JA1" target="_blank">WhatsApp</a><a href="mailto:Ilya.pedan@mail.ru">Ilya.pedan@mail.ru</a><a href="https://max.ru/u/f9LHodD0cOIRPSAG0lVXpcaD_kpeCDOWz7qutLxTrQKdhDZFQEoVI6aX3nU" target="_blank">MAX</a></div></div></div></div></div></section>
 </main>
+<footer class="wrap"><div class="footer-brand"><img src="assets/brand-logo.png" alt="Pedan Shoots"><span>ВИДЕОГРАФ · РЯЗАНЬ</span></div><span>© 2026 Педан Илья · Рязань · Россия</span></footer>
+<div class="modal" id="modal" onclick="if(event.target===this)closeVideo()"><div class="modal-inner"><button class="close" onclick="closeVideo()">×</button><video id="player" controls playsinline preload="metadata"><source src="assets/wedding-reel.mp4" type="video/mp4"></video></div></div>
+<script>
 
-<footer class="wrap"><span>© 2026 Педан Илья</span><span>Видеограф · Рязань</span></footer>
-</body>
-</html>
+const intro=document.getElementById('siteIntro');
+window.addEventListener('load',()=>{
+  setTimeout(()=>{intro.classList.add('hide');document.body.classList.remove('intro-lock');},2000);
+});
+
+const buttons=document.querySelectorAll('.filter'),works=document.querySelectorAll('.work');
+buttons.forEach(b=>b.onclick=()=>{
+  buttons.forEach(x=>x.classList.remove('active','pop'));
+  b.classList.add('active','pop');
+  const f=b.dataset.filter;
+  works.forEach((w,i)=>{
+    const show=f==='all'||w.dataset.cat===f;
+    w.style.display=show?'block':'none';
+    w.classList.remove('filter-in');
+    if(show){void w.offsetWidth;w.style.animationDelay=(i*55)+'ms';w.classList.add('filter-in');}
+  });
+});
+window.addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-innerHeight;document.body.style.setProperty('--scroll-progress',h>0?(scrollY/h):0);});
+function openVideo(src,title){const p=document.getElementById('player');p.querySelector('source').src=src;p.load();document.getElementById('modal').classList.add('open');p.play().catch(()=>{});document.body.style.overflow='hidden'}
+function closeVideo(){const p=document.getElementById('player');p.pause();p.currentTime=0;document.getElementById('modal').classList.remove('open');document.body.style.overflow=''}
+
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeVideo()});
+
+const revealItems=document.querySelectorAll('.hero-content,.stats,.section-head,.filters,.work,.service-intro,.service,.about,.cost,.cta,footer,.process-card,.why-item,.quote-line,.calc,.marquee');
+const revealObserver=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');revealObserver.unobserve(entry.target)}})},{threshold:.12,rootMargin:'0px 0px -45px'});
+revealItems.forEach(el=>revealObserver.observe(el));
+
+
+const calcForm=document.getElementById('calcForm');
+if(calcForm){calcForm.addEventListener('submit',e=>{e.preventDefault();const type=document.getElementById('type').value,city=document.getElementById('city').value,date=document.getElementById('date').value||'дата не указана',format=document.getElementById('format').value,comment=document.getElementById('comment').value.trim()||'без дополнительных комментариев';const text=`Здравствуйте! Хочу обсудить съёмку.\n\nТип: ${type}\nГород: ${city}\nДата: ${date}\nФормат: ${format}\nЗадача: ${comment}`;navigator.clipboard?.writeText(text).catch(()=>{});const status=document.getElementById('formStatus');status.textContent='Заявка скопирована. Сейчас открою Telegram — вставьте текст в чат.';status.classList.add('ok');setTimeout(()=>window.open('https://t.me/pedan_shoots','_blank'),250);});}
+</script>
+
+<!-- Floating quick contact -->
+<button class="contact-fab" id="contactFab" aria-label="Открыть контакты" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.2a7.7 7.7 0 0 1-8 7.3 8.4 8.4 0 0 1-3.3-.7L4 19l1.2-3.7A7.2 7.2 0 0 1 4 11.2 7.7 7.7 0 0 1 12 4a7.7 7.7 0 0 1 8 7.2Z"/><path d="M8.7 10.7h.01M12 10.7h.01M15.3 10.7h.01"/></svg>
+</button>
+<div class="contact-panel" id="contactPanel" aria-hidden="true">
+  <h3>Напишите мне</h3>
+  <p class="contact-sub">Обсудим идею, дату, формат съёмки и стоимость.</p>
+  <div class="contact-list">
+    <a class="contact-link" href="https://t.me/pedan_shoots" target="_blank" rel="noopener"><div class="contact-icon">TG</div><div><strong>Telegram</strong><span>@pedan_shoots</span></div></a>
+    <a class="contact-link" href="https://wa.me/qr/VIJ52A3CUV3JA1" target="_blank" rel="noopener"><div class="contact-icon">WA</div><div><strong>WhatsApp</strong><span>Написать в мессенджер</span></div></a>
+    <a class="contact-link" href="https://max.ru/u/f9LHodD0cOIRPSAG0lVXpcaD_kpeCDOWz7qutLxTrQKdhDZFQEoVI6aX3nU" target="_blank" rel="noopener"><div class="contact-icon">MAX</div><div><strong>MAX</strong><span>Мессенджер MAX</span></div></a>
+    <a class="contact-link" href="https://www.instagram.com/pedan_shoots_/" target="_blank" rel="noopener"><div class="contact-icon">IG</div><div><strong>Instagram</strong><span>@pedan_shoots_</span></div></a>
+    <a class="contact-link" href="mailto:Ilya.pedan@mail.ru"><div class="contact-icon">@</div><div><strong>Почта</strong><span>Ilya.pedan@mail.ru</span></div></a>
+  </div>
+  <a class="contact-apply" href="#price">Оставить заявку <span>→</span></a>
+</div>
+<script>
+(()=>{const b=document.getElementById('contactFab'),p=document.getElementById('contactPanel');if(!b||!p)return;const close=()=>{b.classList.remove('open');p.classList.remove('open');b.setAttribute('aria-expanded','false');p.setAttribute('aria-hidden','true')};b.addEventListener('click',()=>{const open=!p.classList.contains('open');if(open){b.classList.add('open');p.classList.add('open');b.setAttribute('aria-expanded','true');p.setAttribute('aria-hidden','false')}else close()});document.addEventListener('click',e=>{if(!p.contains(e.target)&&!b.contains(e.target))close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});p.querySelector('.contact-apply').addEventListener('click',close)})();
+</script>
+</body></html>
