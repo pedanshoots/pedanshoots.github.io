@@ -23,7 +23,6 @@ footer{padding:30px 0 42px;color:#666d69;font-size:10px;display:flex;justify-con
 @media(max-width:1000px){.nav-cta{display:none}.hero-content{transform:none}.nav nav{display:none}.nav-cta{display:none}.services{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr;gap:40px}.about-photo{height:520px}.cost{grid-template-columns:1fr;gap:25px}.cost-side{border-left:0;border-top:1px solid var(--line);padding:25px 0 0}.stats{grid-template-columns:repeat(2,1fr)}.quote{grid-column:2;text-align:left}}
 @media(max-width:620px){.wrap{width:calc(100% - 24px)}.brand img{width:112px}.nav{height:66px}.hero{min-height:760px;height:auto;padding-top:66px}.hero-content{padding-bottom:55px}.hero h1{font-size:18vw}.hero-sub{font-size:25px}.lead{font-size:13px}.stats{grid-template-columns:1fr 1fr}.stat{padding:18px 12px 18px 0}.stat+.stat{padding-left:14px}.num{font-size:25px}.quote{display:none}section{padding:76px 0}.section-head{display:block;margin-bottom:26px}.section-copy{margin-top:15px}.portfolio-grid{grid-template-columns:1fr;gap:12px}.work-info h3{font-size:18px}.play{width:44px;height:44px;left:13px;bottom:13px}.services{grid-template-columns:1fr}.service{min-height:150px}.service h3{margin-top:28px}.about-photo{height:450px}.qualities{grid-template-columns:1fr}.cost{padding:32px 24px}.cta{min-height:470px}.cta-content{padding:30px 24px}.cta h2{font-size:50px}footer{display:block;line-height:1.8}.footer-brand{margin-bottom:14px}}
 
-.site-intro{position:fixed;inset:0;z-index:9999;background:#000;display:grid;place-items:center;overflow:hidden;opacity:1;visibility:visible;transition:opacity 1.5s ease,visibility 0s linear 1.5s}.site-intro.hide{opacity:0;visibility:hidden}.site-intro video{width:100%;height:100%;object-fit:cover;display:block}.site-intro:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0003,#0000 45%,#0007)}body.intro-lock{overflow:hidden}@media(max-width:620px){.site-intro video{object-position:center}}@media(prefers-reduced-motion:reduce){.site-intro{transition:none}.site-intro.hide{opacity:0}}
 
 /* premium motion layer */
 html{scroll-behavior:smooth}body{overflow-x:hidden}.nav nav a:after{content:"";position:absolute;left:0;right:100%;bottom:-8px;height:1px;background:var(--acid);transition:right .3s ease}.nav nav a:hover:after{right:0}.nav-cta:hover{box-shadow:0 0 0 1px var(--acid),0 0 28px rgba(184,255,0,.12)}
@@ -223,8 +222,7 @@ header{
 </style>
 
 </head>
-<body class="intro-lock">
-<div class="site-intro" id="siteIntro" aria-label="Pedan Shoots"><video autoplay muted playsinline preload="auto"><source src="assets/site-intro.mp4" type="video/mp4"></video></div>
+<body>
 
 <header><div class="wrap nav"><a class="brand" href="#top"><img src="assets/brand-logo.png" alt="Pedan Shoots"><span class="brand-text">PEDAN SHOOTS</span></a><nav><a href="#portfolio">Портфолио</a><a href="#services">Услуги</a><a href="#about">Обо мне</a><a href="#price">Стоимость</a><a href="#contacts">Контакты</a></nav></div>
 <a class="header-discuss" href="https://t.me/pedan_shoots" target="_blank" rel="noopener">Обсудить проект</a>
@@ -267,10 +265,6 @@ header{
 <div class="modal" id="modal" onclick="if(event.target===this)closeVideo()"><div class="modal-inner"><button class="close" onclick="closeVideo()">×</button><video id="player" controls playsinline preload="metadata"><source src="assets/wedding-reel.mp4" type="video/mp4"></video></div></div>
 <script>
 
-const intro=document.getElementById('siteIntro');
-window.addEventListener('load',()=>{
-  setTimeout(()=>{intro.classList.add('hide');document.body.classList.remove('intro-lock');},2000);
-});
 
 const buttons=document.querySelectorAll('.filter'),works=document.querySelectorAll('.work');
 buttons.forEach(b=>b.onclick=()=>{
