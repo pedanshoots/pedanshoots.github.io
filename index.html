@@ -76,7 +76,7 @@ header{background:linear-gradient(180deg,rgba(5,6,6,.22),rgba(5,6,6,.07) 72%,tra
 footer a{transition:color .25s ease}
 footer a:hover{color:var(--acid)}
 @media(max-width:1000px){.hero-content{padding-top:82px;padding-bottom:88px}.hero h1{font-size:clamp(58px,10vw,104px)}}
-@media(max-width:620px){header{display:none!important}.nav{height:0}.hero{min-height:100svh;height:auto}.hero-content{padding:38px 18px 58px}.hero h1{font-size:17vw;line-height:.84;letter-spacing:-.075em}.hero-sub{font-size:21px;line-height:1.05;margin-bottom:15px}.eyebrow{font-size:9px;letter-spacing:.22em;margin-bottom:14px}.lead{font-size:13px;max-width:340px;line-height:1.55;margin-bottom:22px}.actions{justify-content:center}.btn{min-height:46px;padding:0 17px}.hero-bg video{object-position:center center}.hero-bg:after{background:linear-gradient(90deg,rgba(4,6,6,.64),rgba(4,6,6,.2) 55%,rgba(4,6,6,.5)),linear-gradient(0deg,rgba(5,6,6,.95),rgba(5,6,6,.08) 48%,rgba(4,6,6,.4))}}
+@media(max-width:620px){.nav{height:0}.hero{min-height:100svh;height:auto}.hero-content{padding:38px 18px 58px}.hero h1{font-size:17vw;line-height:.84;letter-spacing:-.075em}.hero-sub{font-size:21px;line-height:1.05;margin-bottom:15px}.eyebrow{font-size:9px;letter-spacing:.22em;margin-bottom:14px}.lead{font-size:13px;max-width:340px;line-height:1.55;margin-bottom:22px}.actions{justify-content:center}.btn{min-height:46px;padding:0 17px}.hero-bg video{object-position:center center}.hero-bg:after{background:linear-gradient(90deg,rgba(4,6,6,.64),rgba(4,6,6,.2) 55%,rgba(4,6,6,.5)),linear-gradient(0deg,rgba(5,6,6,.95),rgba(5,6,6,.08) 48%,rgba(4,6,6,.4))}}
 
 /* EXTRA MOTION */
 :root{--ease-premium:cubic-bezier(.16,1,.3,1)}
@@ -191,41 +191,18 @@ header{
 
 </style>
 
-<style id="header-discuss-style">
-.header-discuss{margin-left:32px;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  height:42px;
-  padding:0 18px;
-  border:1px solid rgba(184,255,0,.72);
-  border-radius:999px;
-  background:rgba(184,255,0,.08);
-  color:#b8ff00;
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  text-decoration:none;
-  white-space:nowrap;
-  transition:transform .25s ease, background .25s ease, color .25s ease, box-shadow .25s ease;
-}
-.header-discuss:hover{
-  transform:translateY(-1px);
-  background:#b8ff00;
-  color:#050505;
-  box-shadow:0 10px 30px rgba(184,255,0,.16);
-}
-@media (max-width:640px){
-  .header-discuss{margin-left:32px;height:38px;padding:0 14px;font-size:10px}
-}
-</style>
 
+
+
+<style id="header-scroll-style">
+header{transition:transform .38s ease,opacity .38s ease;}
+header.nav-hidden{transform:translateY(-110%);opacity:0;pointer-events:none;}
+@media(max-width:620px){header{display:block;} .nav{height:0;min-height:0;overflow:hidden;}}
+</style>
 </head>
 <body>
 
 <header><div class="wrap nav"><a class="brand" href="#top"><img src="assets/brand-logo.png" alt="Pedan Shoots"><span class="brand-text">PEDAN SHOOTS</span></a><nav><a href="#portfolio">Портфолио</a><a href="#services">Услуги</a><a href="#about">Обо мне</a><a href="#price">Стоимость</a><a href="#contacts">Контакты</a></nav></div>
-<a class="header-discuss" href="https://t.me/pedan_shoots" target="_blank" rel="noopener">Обсудить проект</a>
 </header>
 <main id="top">
 <section class="hero"><div class="hero-bg"><video autoplay muted loop playsinline preload="metadata" poster="assets/ilya-pedan.png"><source src="assets/hero-timeline.mp4" type="video/mp4"></video></div><div class="wrap hero-content"><div class="eyebrow">PEDAN SHOOTS · РЯЗАНЬ</div><h1>ПЕДАН ИЛЬЯ</h1><div class="hero-sub">ВИДЕОГРАФ · РЯЗАНЬ · REELS</div><p class="lead">Создаю видео, которые передают атмосферу, эмоции и характер события — от первой идеи до готового ролика.</p><div class="actions"><a class="btn primary" href="#portfolio">Смотреть работы <span class="arrow">→</span></a><a class="btn" href="https://t.me/pedan_shoots" target="_blank">Написать мне <span class="arrow">→</span></a></div></div></section>
@@ -311,5 +288,24 @@ if(calcForm){calcForm.addEventListener('submit',e=>{e.preventDefault();const typ
 </div>
 <script>
 (()=>{const b=document.getElementById('contactFab'),p=document.getElementById('contactPanel');if(!b||!p)return;const close=()=>{b.classList.remove('open');p.classList.remove('open');b.setAttribute('aria-expanded','false');p.setAttribute('aria-hidden','true')};b.addEventListener('click',()=>{const open=!p.classList.contains('open');if(open){b.classList.add('open');p.classList.add('open');b.setAttribute('aria-expanded','true');p.setAttribute('aria-hidden','false')}else close()});document.addEventListener('click',e=>{if(!p.contains(e.target)&&!b.contains(e.target))close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});p.querySelector('.contact-apply').addEventListener('click',close)})();
+</script>
+
+<script id="header-scroll-script">
+(function(){
+  const header=document.querySelector('header');
+  if(!header) return;
+  let lastY=window.scrollY;
+  let ticking=false;
+  function update(){
+    const y=window.scrollY;
+    if(y<=10){ header.classList.remove('nav-hidden'); }
+    else if(y>lastY+4){ header.classList.add('nav-hidden'); }
+    else if(y<lastY-4){ header.classList.remove('nav-hidden'); }
+    lastY=y; ticking=false;
+  }
+  window.addEventListener('scroll', function(){
+    if(!ticking){ window.requestAnimationFrame(update); ticking=true; }
+  }, {passive:true});
+})();
 </script>
 </body></html>
